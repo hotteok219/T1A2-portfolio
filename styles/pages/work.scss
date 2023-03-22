@@ -1,0 +1,28 @@
+@import "../index";
+@import "../defaults/breakpoint";
+
+#work-main {
+    #work-card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        .work-card {
+            border: 1px solid pink;
+        }
+    }
+}
+
+@media screen and (min-width:$medium) {
+    #work-main {
+        #work-card-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width:$large) {
+    #work-main {
+        #work-card-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

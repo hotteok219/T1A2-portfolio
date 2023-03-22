@@ -1,0 +1,21 @@
+#page-header {
+    border: 1px solid blue;
+    // size
+    width: 100vw;
+    height: 80px;
+    box-sizing: border-box;
+    //position
+    position: sticky;
+    top:0;
+    // child items positioning
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 3em;
+    }
+}

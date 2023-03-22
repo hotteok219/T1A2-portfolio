@@ -1,0 +1,70 @@
+@import "../defaults/breakpoint";
+
+#page-footer {
+    border: 1px solid red;
+    // size
+    width: 100vw;
+    box-sizing: border-box;
+    // design
+    padding: 10px;
+    // child items positioning
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #contact-photo {
+        border: 1px solid green;
+        img {
+            max-width: 25vw;
+            border-radius: 50%;
+        }
+    }
+
+    #contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border: 1px solid blue;
+        #contact-name {
+            margin-bottom: 10px;
+
+            h2 {
+                margin: 0;
+            }
+        }
+        #contact-email {
+            margin-bottom: 10px;
+        }
+        #contact-links {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .contact-links-icon {
+                margin: 0 20px;
+                font-size: 1.5em;
+            }
+
+            border: 1px solid red;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    #page-footer {
+        flex-direction: row;
+        justify-content: center;
+
+        #contact-photo {
+            img {
+                max-width: 120px;
+            }
+        }
+
+        #contact-details {
+            margin-left: 20px;
+            align-items: flex-start;
+        }
+    }
+}
