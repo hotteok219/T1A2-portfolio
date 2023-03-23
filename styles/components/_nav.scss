@@ -1,7 +1,8 @@
 @import "../defaults/breakpoint";
+@import "../defaults/color";
 
 #page-nav {
-    border: 1px solid green;
+    background-color:$navblue;
     #page-nav-closed {
         // position
         position: fixed;
@@ -17,9 +18,13 @@
 
         #nav-icon-open {
             font-size: 1.5em;
+            a {
+                color: $bodytext;
+            }
         }
     }
     #page-nav-open {
+        background-color:$navblue;
         // position
         position: fixed;
         top: 0;
@@ -37,6 +42,9 @@
          flex-direction: column;
          #nav-icon-close {
              font-size: 1.5em;
+             a {
+                 color: $bodytext;
+             }
              // size
              height: 80px;
              box-sizing: border-box;
@@ -52,10 +60,11 @@
                 padding: 10px;
                 a {
                     display: block;
+                    color: $bodytext;
                 }
             }
             .nav-link:hover {
-                background-color: skyblue;
+                background-color: $mainpink;
             }
          }
     }
@@ -63,8 +72,15 @@
 
 @media screen and (min-width:$large) {
     #page-nav {
+        // position
         position: sticky;
-        top: 80px;
+        top: 70px;
+        // size
+        width: 100vw;
+        box-sizing: border-box;
+        // child items positioning
+        display: flex;
+        justify-content: center;
         #page-nav-closed {
             display: none;
         }
@@ -87,10 +103,9 @@
                 display: none;
             }
             #nav-link-list {
+                width: 80vw;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                width: 50vw;
-                max-width: 1200px;
 
                 .nav-link {
                     margin: 0;

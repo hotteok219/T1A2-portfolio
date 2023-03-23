@@ -1,8 +1,10 @@
+@import "../defaults/color";
+
 #page-header {
-    border: 1px solid blue;
+    background-color: $mainblue;
     // size
     width: 100vw;
-    height: 80px;
+    height: 70px;
     box-sizing: border-box;
     //position
     position: sticky;
@@ -17,5 +19,7 @@
         font-family: 'Playfair Display', serif;
         font-style: italic;
         font-size: 3em;
+        letter-spacing: -2px;
+        color: $bodytext;
     }
 }

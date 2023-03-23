@@ -1,0 +1,23 @@
+@import "../index";
+
+#blog-main {
+    .blogpost {
+        margin: 0 auto 30px;
+        max-width: 80vw;
+        .blogpost-title {
+        }
+        .blogpost-date {
+            margin-bottom: 10px;
+            font-size: 0.8em;
+        }
+        .blogpost-image {
+            margin-bottom: 15px;
+            img {
+                margin: 0 auto;
+                display: block;
+                width: 100%;
+                max-width: 600px;
+            }
+        }
+    }
+}

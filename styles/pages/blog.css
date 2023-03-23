@@ -199,62 +199,20 @@ main {
   margin-bottom: 20px;
 }
 
-#work-main #work-card-grid {
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 50px;
+#blog-main .blogpost {
+  margin: 0 auto 30px;
+  max-width: 80vw;
 }
-#work-main #work-card-grid .work-card {
-  border: 1px solid pink;
-  max-height: 20vh;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-rows: 2fr auto auto;
-  grid-template-columns: 1fr;
+#blog-main .blogpost .blogpost-date {
+  margin-bottom: 10px;
+  font-size: 0.8em;
 }
-#work-main #work-card-grid .work-card .work-card-img {
-  grid-row: 1/4;
-  grid-column: 1/3;
-  -o-object-fit: cover;
-     object-fit: cover;
+#blog-main .blogpost .blogpost-image {
+  margin-bottom: 15px;
+}
+#blog-main .blogpost .blogpost-image img {
+  margin: 0 auto;
+  display: block;
   width: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-#work-main #work-card-grid .work-card .work-card-title {
-  grid-row: 2/3;
-  grid-column: 1/2;
-  box-sizing: border-box;
-  padding: 10px 15px;
-  margin: 0;
-  font-size: 2em;
-  line-height: 0.8em;
-  background-color: rgba(0, 0, 0, 0.2705882353);
-  color: #ffffff;
-}
-#work-main #work-card-grid .work-card .work-card-lang {
-  grid-row: 3/4;
-  grid-column: 1/2;
-  box-sizing: border-box;
-  border-radius: 0 0 20px 20px;
-  padding: 0px 15px 10px;
-  margin: 0px;
-  font-size: 1.5em;
-  background-color: rgba(0, 0, 0, 0.2705882353);
-  color: #ffffff;
-}
-#work-main #work-card-grid .work-card:hover {
-  background-color: rgba(0, 0, 0, 0.2705882353);
-}
-
-@media screen and (min-width: 480px) {
-  #work-main #work-card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (min-width: 800px) {
-  #work-main #work-card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}/*# sourceMappingURL=work.css.map */
+  max-width: 600px;
+}/*# sourceMappingURL=blog.css.map */

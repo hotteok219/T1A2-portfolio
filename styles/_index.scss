@@ -12,6 +12,8 @@ body {
     align-items: center;
     // Design
     font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+    background-color: $mainwhite;
+    color: $bodytext;
 
     a {
         text-decoration: none;
@@ -19,11 +21,11 @@ body {
 }
 
 main {
-    border: 1px solid yellow;
-    margin-bottom: 20px;
+    background-color: $mainwhite;
     flex-grow: 2;
     width: 100vw;
     max-width: 1200px;
     box-sizing: border-box;
     padding: 10px;
+    margin-bottom: 20px;
 }
