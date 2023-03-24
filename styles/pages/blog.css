@@ -198,6 +198,7 @@ body {
 }
 body a {
   text-decoration: none;
+  color: #303540;
 }
 
 main {
@@ -209,6 +210,29 @@ main {
   margin-bottom: 20px;
 }
 
+#blog-main #bloglist {
+  margin-bottom: 30px;
+  border: 1px solid #A5A6E8;
+  border-radius: 10px;
+  padding: 10px;
+}
+#blog-main #bloglist h3 {
+  margin: 0;
+}
+#blog-main #bloglist .bloglist-item {
+  margin-bottom: 10px;
+}
+#blog-main #bloglist .bloglist-item .bloglist-title a {
+  text-decoration: underline;
+}
+#blog-main #bloglist .bloglist-item .bloglist-title a:hover {
+  color: #A5A6E8;
+}
+#blog-main #bloglist .bloglist-item .bloglist-date {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.9em;
+}
 #blog-main .blogpost {
   margin: 0 auto 30px;
   border-bottom: 1px dashed #A5A6E8;

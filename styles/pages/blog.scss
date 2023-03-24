@@ -1,17 +1,47 @@
 @import "../index";
 
 #blog-main {
+    // Styling for list of blogs
+    #bloglist {
+        margin-bottom: 30px;
+        border: 1px solid $mainpurple;
+        border-radius: 10px;
+        padding: 10px;
+
+        h3 {
+            margin: 0;
+        }
+        .bloglist-item {
+            margin-bottom: 10px;
+            .bloglist-title {
+                a {
+                    text-decoration: underline;
+                }
+                a:hover {
+                    color: $mainpurple;
+                }
+            }
+            .bloglist-date {
+                font-style: italic;
+                font-weight: 500;
+                font-size: 0.9em;
+            }
+        }
+    }
+    // Styling for each set of individual blogposts
     .blogpost {
         margin: 0 auto 30px;
         border-bottom: 1px dashed $mainpurple;
         box-sizing: border-box;
         max-width: 80vw;
+        // Title of each blog
         .blogpost-title {
         }
         .blogpost-info {
             margin-bottom: 10px;
             font-size: 0.8em;
         }
+        // Image for each blog
         .blogpost-image {
             margin-bottom: 15px;
             img {
@@ -23,9 +53,11 @@
                 object-fit: cover;
             }
         }
+        // Body text of blog
         .blogpost-text {
             margin-bottom: 20px;
         }
+        // Anchor - back to top
         .blogpost-footer {
             margin-bottom:50px;
             text-align: right;

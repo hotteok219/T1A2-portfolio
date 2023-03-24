@@ -17,6 +17,7 @@
             grid-template-rows: 2fr auto auto;
             grid-template-columns: 1fr;
 
+            // Image of project
             .work-card-img {
                 grid-row: 1 / 4;
                 grid-column: 1 / 3;
@@ -25,6 +26,8 @@
                 height: 100%;
                 border-radius: 20px;
             }
+            
+            // Title and link to project
             .work-card-title {
                 grid-row: 2 / 3;
                 grid-column: 1 / 2;
@@ -41,6 +44,8 @@
                     color: $mainblue;
                 }
             }
+
+            // Programming language icons
             .work-card-lang {
                 grid-row: 3 / 4;
                 grid-column: 1 / 2;
@@ -56,6 +61,7 @@
     }
 }
 
+// Tablet - 2 columns
 @media screen and (min-width:$medium) {
     #work-main {
         #work-card-grid {
@@ -64,6 +70,7 @@
     }
 }
 
+// Desktop - 3 columns
 @media screen and (min-width:$large) {
     #work-main {
         #work-card-grid {

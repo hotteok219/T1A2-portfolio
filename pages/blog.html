@@ -30,12 +30,15 @@
     </header>
     <nav id="page-nav">
         <div id="page-nav-closed">
+            <!-- Icon to open nav sidebar on mobile view -->
             <span id="nav-icon-open"><a href="javascript:void(0)" onclick="openMenu()"><i class="fa-solid fa-bars"
                         title="Open navigation menu"></i></a></span>
         </div>
         <div id="page-nav-open">
+            <!-- Icon to close nav sidebar on mobile view -->
             <span id="nav-icon-close"><a href="javascript:void(0)" onclick="closeMenu()"><i
                         class="fa-regular fa-circle-xmark" title="Close navigation menu"></i></a></span>
+            <!-- Links on navigation -->
             <div id="nav-link-list">
                 <p class="nav-link"><a href="../index.html">Home</a></p>
                 <p class="nav-link"><a href="../pages/about.html">About</a></p>
@@ -43,11 +46,22 @@
                 <p class="nav-link"><a href="../pages/work.html">Work</a></p>
             </div>
         </div>
-
     </nav>
     <main id="blog-main">
         <h1 id="top">Blog</h1>
-        <article class="blogpost">
+        <!-- List of blog articles and date published -->
+        <section id="bloglist">
+            <h3>Latest articles</h3>
+            <ul>
+                <li class="bloglist-item"><span class="bloglist-title"><a href="#blogpost-20230323">Staying updated with programming</a></span><span class="bloglist-date"> - published 23 March 2023</span></li>
+                <li class="bloglist-item"><span class="bloglist-title"><a href="#blogpost-20230309">Coding isn't just a job, it's a lifestyle</a></span><span class="bloglist-date"> - published 9 March 2023</span></li>
+                <li class="bloglist-item"><span class="bloglist-title"><a href="#blogpost-20230223">Programmers diving into UI/UX</a></span><span class="bloglist-date"> - published 23 February 2023</span></li>
+                <li class="bloglist-item"><span class="bloglist-title"><a href="#blogpost-20230209">Will AI make developers redundant? AI says no</a></span><span class="bloglist-date"> - published 9 February 2023</span></li>
+                <li class="bloglist-item"><span class="bloglist-title"><a href="#blogpost-20230123">Is this the end of open plan workspaces?</a></span><span class="bloglist-date"> - published 23 January 2023</span></li>
+            </ul>
+        </section>
+        <!-- Individual blog posts -->
+        <article class="blogpost" id="blogpost-20230323">
             <h3 class="blogpost-title">Staying updated with programming</h3>
             <div class="blogpost-info">23 March 2023</div>
             <div class="blogpost-image"><img src="../images/blogpost-img001.jpg" alt="An image of floppy disks"></div>
@@ -65,12 +79,13 @@
                 Laboriosam, vel mollitia sed animi esse sunt, impedit modi est culpa veritatis unde architecto eius rem
                 exercitationem minus non porro beatae. Reiciendis ex ducimus quae nesciunt velit maxime aperiam
                 voluptate!</div>
-                <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
+            <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
         </article>
-        <article class="blogpost">
+        <article class="blogpost" id="blogpost-20230309">
             <h3 class="blogpost-title">Coding isn't just a job, it's a lifestyle</h3>
             <div class="blogpost-info">9 March 2023</div>
-            <div class="blogpost-image"><img src="../images/blogpost-img002.jpg" alt="A photo of a phone with the wallpaper - eat, sleep, code, repeat"></div>
+            <div class="blogpost-image"><img src="../images/blogpost-img002.jpg"
+                    alt="A photo of a phone with the wallpaper - eat, sleep, code, repeat"></div>
             <div class="blogpost-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam maxime
                 voluptates officiis provident omnis illum tempore beatae ducimus porro inventore expedita non ipsum
                 suscipit eos cupiditate officia, facilis laudantium?
@@ -85,12 +100,13 @@
                 Laboriosam, vel mollitia sed animi esse sunt, impedit modi est culpa veritatis unde architecto eius rem
                 exercitationem minus non porro beatae. Reiciendis ex ducimus quae nesciunt velit maxime aperiam
                 voluptate!</div>
-                <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
+            <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
         </article>
-        <article class="blogpost">
+        <article class="blogpost" id="blogpost-20230223">
             <h3 class="blogpost-title">Programmers diving into UI/UX</h3>
             <div class="blogpost-info">23 February 2023</div>
-            <div class="blogpost-image"><img src="../images/blogpost-img003.jpg" alt="A picture of a person hand drawing wireframes"></div>
+            <div class="blogpost-image"><img src="../images/blogpost-img003.jpg"
+                    alt="A picture of a person hand drawing wireframes"></div>
             <div class="blogpost-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam maxime
                 voluptates officiis provident omnis illum tempore beatae ducimus porro inventore expedita non ipsum
                 suscipit eos cupiditate officia, facilis laudantium?
@@ -105,12 +121,13 @@
                 Laboriosam, vel mollitia sed animi esse sunt, impedit modi est culpa veritatis unde architecto eius rem
                 exercitationem minus non porro beatae. Reiciendis ex ducimus quae nesciunt velit maxime aperiam
                 voluptate!</div>
-                <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
+            <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
         </article>
-        <article class="blogpost">
+        <article class="blogpost" id="blogpost-20230209">
             <h3 class="blogpost-title">Will AI make developers redundant? AI says no</h3>
             <div class="blogpost-info">9 February 2023</div>
-            <div class="blogpost-image"><img src="../images/blogpost-img004.jpg" alt="A picture of a screen with ChatGPT open"></div>
+            <div class="blogpost-image"><img src="../images/blogpost-img004.jpg"
+                    alt="A picture of a screen with ChatGPT open"></div>
             <div class="blogpost-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam maxime
                 voluptates officiis provident omnis illum tempore beatae ducimus porro inventore expedita non ipsum
                 suscipit eos cupiditate officia, facilis laudantium?
@@ -125,12 +142,13 @@
                 Laboriosam, vel mollitia sed animi esse sunt, impedit modi est culpa veritatis unde architecto eius rem
                 exercitationem minus non porro beatae. Reiciendis ex ducimus quae nesciunt velit maxime aperiam
                 voluptate!</div>
-                <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
+            <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
         </article>
-        <article class="blogpost">
+        <article class="blogpost" id="blogpost-20230123">
             <h3 class="blogpost-title">Is this the end of open plan workspaces?</h3>
             <div class="blogpost-info">23 January 2023</div>
-            <div class="blogpost-image"><img src="../images/blogpost-img005.jpg" alt="A picture of a desk with a lamp"></div>
+            <div class="blogpost-image"><img src="../images/blogpost-img005.jpg" alt="A picture of a desk with a lamp">
+            </div>
             <div class="blogpost-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quibusdam maxime
                 voluptates officiis provident omnis illum tempore beatae ducimus porro inventore expedita non ipsum
                 suscipit eos cupiditate officia, facilis laudantium?
@@ -145,30 +163,33 @@
                 Laboriosam, vel mollitia sed animi esse sunt, impedit modi est culpa veritatis unde architecto eius rem
                 exercitationem minus non porro beatae. Reiciendis ex ducimus quae nesciunt velit maxime aperiam
                 voluptate!</div>
-                <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
+            <div class="blogpost-footer"><a href="#top">^ back to top</a></div>
         </article>
     </main>
     <footer id="page-footer">
+        <!-- Avatar -->
         <div id="contact-photo">
             <img src="../images/profilepic.jpg" alt="Avatar of Helen">
         </div>
         <div id="contact-details">
+            <!-- Name -->
             <div id="contact-name">
                 <h2>Helen T</h2>
             </div>
+            <!-- Contact: email address -->
             <div id="contact-email">
                 <a href="mailto:14310@coderacademy.edu.au">14310@coderacademy.edu.au</a>
             </div>
+            <!-- Icons with links -->
             <div id="contact-links">
                 <span class="contact-links-icon"><a href="https://github.com/hotteok219" target="_blank"><i
                             class="fa-brands fa-github-alt" title="Link to Helen's GitHub"></i></a></span>
                 <span class="contact-links-icon"><a href="https://www.linkedin.com/in/helenthai17/" target="_blank"><i
                             class="fa-brands fa-linkedin-in" title="Link to Helen's LinkedIn"></i></a></span>
-                <span class="contact-links-icon"><a href=""><i class="fa-regular fa-file-pdf"
-                            title="Download Helen's resume as a PDF"></i></a></span>
+                <span class="contact-links-icon"><a href="../assets/resume_helent.pdf" target="_blank"><i
+                            class="fa-regular fa-file-pdf" title="Download Helen's resume as a PDF"></i></a></span>
             </div>
         </div>
     </footer>
 </body>
-
 </html>
