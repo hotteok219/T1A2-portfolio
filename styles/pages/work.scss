@@ -9,7 +9,6 @@
         grid-template-columns: 1fr;
         grid-gap: 50px;
         .work-card {
-            border: 1px solid pink;
             // size
             max-height: 20vh;
             box-sizing: border-box;
@@ -32,10 +31,15 @@
                 box-sizing: border-box;
                 padding: 10px 15px;
                 margin: 0;
-                font-size: 2em;
+                font-size: 1.5em;
                 line-height: 0.8em;
                 background-color: $blackoverlay;
-                color: #ffffff;
+                a {
+                    color: #ffffff;
+                }
+                a:hover {
+                    color: $mainblue;
+                }
             }
             .work-card-lang {
                 grid-row: 3 / 4;
@@ -44,13 +48,10 @@
                 border-radius: 0 0 20px 20px;
                 padding: 0px 15px 10px;
                 margin: 0px;
-                font-size: 1.5em;
+                font-size: 1.2em;
                 background-color: $blackoverlay;
                 color: #ffffff;
             }
-        }
-        .work-card:hover {
-            background-color: #00000045;
         }
     }
 }
@@ -67,6 +68,11 @@
     #work-main {
         #work-card-grid {
             grid-template-columns: repeat(3, 1fr);
+            .work-card {
+                .work-card-title {
+                    font-size: 2em;
+                }
+            }
         }
     }
 }

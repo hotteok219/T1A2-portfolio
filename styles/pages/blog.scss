@@ -3,10 +3,12 @@
 #blog-main {
     .blogpost {
         margin: 0 auto 30px;
+        border-bottom: 1px dashed $mainpurple;
+        box-sizing: border-box;
         max-width: 80vw;
         .blogpost-title {
         }
-        .blogpost-date {
+        .blogpost-info {
             margin-bottom: 10px;
             font-size: 0.8em;
         }
@@ -17,7 +19,38 @@
                 display: block;
                 width: 100%;
                 max-width: 600px;
+                max-height: 300px;
+                object-fit: cover;
             }
         }
+        .blogpost-text {
+            margin-bottom: 20px;
+        }
+        .blogpost-footer {
+            margin-bottom:50px;
+            text-align: right;
+            font-size: 0.8em;
+            a {
+                color: $maindarkblue;
+            }
+        }
+    }
+}
+
+// Fix sticky header hiding anchor
+:target::before {
+    height: 70px;
+    margin: -70px 0 0;
+    display: block;
+    content: "";
+}
+
+@media screen and (min-width:$large) {
+    // Fix sticky header hiding anchor
+    :target::before {
+        height: 120px;
+        margin: -120px 0 0;
+        display: block;
+        content: "";
     }
 }

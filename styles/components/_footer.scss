@@ -4,7 +4,7 @@
 #page-footer {
     background-color: $maindarkblue;
     // size
-    width: 100vw;
+    width: 100%; // Use 100% instead of 100vw to fix horizontal scroll bar issue when the page has a vertical scroll
     box-sizing: border-box;
     // design
     padding: 10px;
@@ -29,7 +29,8 @@
             margin-bottom: 10px;
             h2 {
                 margin: 0;
-                font-family: 'Playfair Display', serif;
+                line-height: 1.0em;
+                font-weight: 100;
             }
         }
         #contact-email {

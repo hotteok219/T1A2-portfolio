@@ -2,7 +2,8 @@
 @import "../defaults/color";
 
 #page-nav {
-    background-color:$navblue;
+    background-color: $mainblue;
+    box-sizing: border-box;
     #page-nav-closed {
         // position
         position: fixed;
@@ -24,7 +25,7 @@
         }
     }
     #page-nav-open {
-        background-color:$navblue;
+        background-color: $mainblue;
         // position
         position: fixed;
         top: 0;
@@ -56,7 +57,8 @@
          }
          #nav-link-list {
             .nav-link {
-                font-size: 1.5em;
+                font-size: 1.2em;
+                font-weight: 600;
                 padding: 10px;
                 a {
                     display: block;
@@ -64,7 +66,10 @@
                 }
             }
             .nav-link:hover {
-                background-color: $mainpink;
+                background-color: $maindarkblue;
+                a {
+                    color: white;
+                }
             }
          }
     }
@@ -72,12 +77,14 @@
 
 @media screen and (min-width:$large) {
     #page-nav {
+        // design
+        background-color: $mainwhite;
+        border-bottom: 1px solid $navblue;
         // position
         position: sticky;
         top: 70px;
         // size
-        width: 100vw;
-        box-sizing: border-box;
+        width: 100%;
         // child items positioning
         display: flex;
         justify-content: center;
@@ -97,13 +104,14 @@
             max-width: 100vw;
             // design
             text-align: center;
+            background-color: $mainwhite;
             // child items positioning
             flex-direction: row;
             #nav-icon-close {
                 display: none;
             }
             #nav-link-list {
-                width: 80vw;
+                width: 60vw;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
 

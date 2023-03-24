@@ -11,8 +11,8 @@ body {
     justify-content: space-between;
     align-items: center;
     // Design
-    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
-    background-color: $mainwhite;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(farthest-side at 80% 65%, $mainblue, $mainwhite);
     color: $bodytext;
 
     a {
@@ -21,11 +21,10 @@ body {
 }
 
 main {
-    background-color: $mainwhite;
-    flex-grow: 2;
-    width: 100vw;
+    width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
+    flex-grow: 2;
     padding: 10px;
     margin-bottom: 20px;
 }

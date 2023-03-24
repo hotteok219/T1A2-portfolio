@@ -1,6 +1,7 @@
 #page-header {
-  background-color: #C1D2FE;
-  width: 100vw;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #BCC4D7;
+  width: 100%;
   height: 70px;
   box-sizing: border-box;
   position: sticky;
@@ -15,11 +16,14 @@
   font-style: italic;
   font-size: 3em;
   letter-spacing: -2px;
+}
+#page-header h1 a {
   color: #303540;
 }
 
 #page-nav {
-  background-color: #BCC4D7;
+  background-color: #C1D2FE;
+  box-sizing: border-box;
 }
 #page-nav #page-nav-closed {
   position: fixed;
@@ -38,7 +42,7 @@
   color: #303540;
 }
 #page-nav #page-nav-open {
-  background-color: #BCC4D7;
+  background-color: #C1D2FE;
   position: fixed;
   top: 0;
   right: 0;
@@ -64,7 +68,8 @@
   color: #303540;
 }
 #page-nav #page-nav-open #nav-link-list .nav-link {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: 600;
   padding: 10px;
 }
 #page-nav #page-nav-open #nav-link-list .nav-link a {
@@ -72,15 +77,19 @@
   color: #303540;
 }
 #page-nav #page-nav-open #nav-link-list .nav-link:hover {
-  background-color: #FFF0F3;
+  background-color: #303540;
+}
+#page-nav #page-nav-open #nav-link-list .nav-link:hover a {
+  color: white;
 }
 
 @media screen and (min-width: 800px) {
   #page-nav {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #BCC4D7;
     position: sticky;
     top: 70px;
-    width: 100vw;
-    box-sizing: border-box;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -96,13 +105,14 @@
     width: auto;
     max-width: 100vw;
     text-align: center;
+    background-color: #F7F7F7;
     flex-direction: row;
   }
   #page-nav #page-nav-open #nav-icon-close {
     display: none;
   }
   #page-nav #page-nav-open #nav-link-list {
-    width: 80vw;
+    width: 60vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -112,7 +122,7 @@
 }
 #page-footer {
   background-color: #303540;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
@@ -134,7 +144,8 @@
 }
 #page-footer #contact-details #contact-name h2 {
   margin: 0;
-  font-family: "Playfair Display", serif;
+  line-height: 1em;
+  font-weight: 100;
 }
 #page-footer #contact-details #contact-email {
   margin-bottom: 10px;
@@ -181,8 +192,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-family: "DM Sans", Arial, Helvetica, sans-serif;
-  background-color: #F7F7F7;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  background-image: radial-gradient(farthest-side at 80% 65%, #C1D2FE, #F7F7F7);
   color: #303540;
 }
 body a {
@@ -190,11 +201,10 @@ body a {
 }
 
 main {
-  background-color: #F7F7F7;
-  flex-grow: 2;
-  width: 100vw;
+  width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
+  flex-grow: 2;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -206,7 +216,6 @@ main {
   grid-gap: 50px;
 }
 #work-main #work-card-grid .work-card {
-  border: 1px solid pink;
   max-height: 20vh;
   box-sizing: border-box;
   display: grid;
@@ -228,10 +237,15 @@ main {
   box-sizing: border-box;
   padding: 10px 15px;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 0.8em;
-  background-color: rgba(0, 0, 0, 0.2705882353);
+  background-color: rgba(0, 0, 0, 0.8078431373);
+}
+#work-main #work-card-grid .work-card .work-card-title a {
   color: #ffffff;
+}
+#work-main #work-card-grid .work-card .work-card-title a:hover {
+  color: #C1D2FE;
 }
 #work-main #work-card-grid .work-card .work-card-lang {
   grid-row: 3/4;
@@ -240,12 +254,9 @@ main {
   border-radius: 0 0 20px 20px;
   padding: 0px 15px 10px;
   margin: 0px;
-  font-size: 1.5em;
-  background-color: rgba(0, 0, 0, 0.2705882353);
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.8078431373);
   color: #ffffff;
-}
-#work-main #work-card-grid .work-card:hover {
-  background-color: rgba(0, 0, 0, 0.2705882353);
 }
 
 @media screen and (min-width: 480px) {
@@ -256,5 +267,8 @@ main {
 @media screen and (min-width: 800px) {
   #work-main #work-card-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  #work-main #work-card-grid .work-card .work-card-title {
+    font-size: 2em;
   }
 }/*# sourceMappingURL=work.css.map */

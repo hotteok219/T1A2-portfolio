@@ -1,0 +1,32 @@
+@import "../index";
+
+#about-main {
+    .about-section {
+        .about-title {
+            font-weight: 700;
+            border-bottom: 1px solid $navblue;
+        }
+
+        #softwareapps-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            p {
+                margin: 5px 5px;
+                padding: 5px 10px;
+                border: 1px solid $mainblue;
+                border-radius: 10px;
+                line-height: 0.8em;
+                font-size: 0.8em;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            p:hover {
+                background-color: $mainblue;
+                cursor: crosshair;
+            }
+        }
+    }
+}
