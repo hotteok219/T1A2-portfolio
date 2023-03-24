@@ -20,7 +20,7 @@
         #nav-icon-open {
             font-size: 1.5em;
             a {
-                color: $bodytext;
+                color: $maindarkblue;
             }
         }
     }
@@ -44,7 +44,7 @@
          #nav-icon-close {
              font-size: 1.5em;
              a {
-                 color: $bodytext;
+                 color: $maindarkblue;
              }
              // size
              height: 80px;
@@ -62,7 +62,7 @@
                 padding: 10px;
                 a {
                     display: block;
-                    color: $bodytext;
+                    color: $maindarkblue;
                 }
             }
             .nav-link:hover {
