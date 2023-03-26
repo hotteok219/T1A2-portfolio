@@ -1,14 +1,18 @@
 #page-header {
   background-color: #F7F7F7;
   border-bottom: 1px solid #BCC4D7;
+  /* size */
   width: 100%;
   height: 70px;
   box-sizing: border-box;
+  /* position */
   position: sticky;
   top: 0;
+  /* child items positioning */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* heading/title */
 }
 #page-header h1 {
   margin: 0;
@@ -26,12 +30,15 @@
   box-sizing: border-box;
 }
 #page-nav #page-nav-closed {
+  /* position */
   position: fixed;
   top: 0;
   right: 0;
+  /* size */
   height: 80px;
   box-sizing: border-box;
   padding: 10px;
+  /* child items positioning */
   display: flex;
   align-items: center;
 }
@@ -43,23 +50,29 @@
 }
 #page-nav #page-nav-open {
   background-color: #C1D2FE;
+  /* position */
   position: fixed;
   top: 0;
   right: 0;
+  /* size */
   max-width: 200px;
   height: 100vh;
   box-sizing: border-box;
+  /* on load settings */
   visibility: collapse;
   width: 0vw;
+  /* child items positioning */
   text-align: right;
   display: flex;
   flex-direction: column;
 }
 #page-nav #page-nav-open #nav-icon-close {
   font-size: 1.5em;
+  /* size */
   height: 80px;
   box-sizing: border-box;
   padding: 10px;
+  /* child items positioning */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -83,13 +96,17 @@
   color: white;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   #page-nav {
+    /* design */
     background-color: #F7F7F7;
     border-bottom: 1px solid #BCC4D7;
+    /* position */
     position: sticky;
     top: 70px;
+    /* size */
     width: 100%;
+    /* child items positioning */
     display: flex;
     justify-content: center;
   }
@@ -97,15 +114,20 @@
     display: none;
   }
   #page-nav #page-nav-open {
+    /* position */
     position: relative;
     top: auto;
     right: auto;
+    /* on load settings */
     visibility: visible;
+    /* size */
     height: auto;
     width: auto;
     max-width: 100vw;
+    /* design */
     text-align: center;
     background-color: #F7F7F7;
+    /* child items positioning */
     flex-direction: row;
   }
   #page-nav #page-nav-open #nav-icon-close {
@@ -122,12 +144,17 @@
 }
 #page-footer {
   background-color: #303540;
+  /* size */
   width: 100%;
   box-sizing: border-box;
+  /* design */
   padding: 10px;
+  /* child items positioning */
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* profile photo */
+  /* contact details container div */
 }
 #page-footer #contact-photo img {
   max-width: 25vw;
@@ -157,6 +184,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  /* icons */
 }
 #page-footer #contact-details #contact-links .contact-links-icon {
   margin: 0px 20px;
@@ -168,6 +196,7 @@
 
 @media screen and (min-width: 480px) {
   #page-footer {
+    /* change flex direction on tablet and desktop viewports */
     flex-direction: row;
     justify-content: center;
   }
@@ -186,15 +215,18 @@
   }
 }
 body {
+  /* initial page structure setup */
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  /* general design */
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background-image: radial-gradient(farthest-side at 80% 65%, #C1D2FE, #F7F7F7);
   color: #303540;
+  /* backup styling for hyperlinks */
 }
 body a {
   text-decoration: none;
@@ -202,17 +234,33 @@ body a {
 }
 
 main {
+  margin-bottom: 20px;
+  padding: 10px;
+  /* restrict main container for extra large monitors */
   width: 100%;
   max-width: 1200px;
   box-sizing: border-box;
   flex-grow: 2;
-  padding: 10px;
-  margin-bottom: 20px;
 }
 
+#about-main .about-section {
+  margin-bottom: 50px;
+  /* Title of each section */
+  /* Download resume - capsule styling */
+  /* List of software and apps - capsule styling */
+}
 #about-main .about-section .about-title {
   font-weight: 700;
   border-bottom: 1px solid #BCC4D7;
+}
+#about-main .about-section #resume-text {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #C1D2FE;
+}
+#about-main .about-section #resume-text:hover {
+  background-color: #303540;
+  color: white;
 }
 #about-main .about-section #softwareapps-list {
   display: flex;
@@ -222,8 +270,8 @@ main {
 #about-main .about-section #softwareapps-list p {
   margin: 5px 5px;
   padding: 5px 10px;
-  border: 1px solid #C1D2FE;
   border-radius: 10px;
+  border: 1px solid #C1D2FE;
   line-height: 0.8em;
   font-size: 0.9em;
   font-weight: 700;
@@ -232,4 +280,22 @@ main {
 #about-main .about-section #softwareapps-list p:hover {
   background-color: #C1D2FE;
   cursor: crosshair;
+}
+#about-main .about-section .item {
+  /* Work/education role title or course title */
+  /* Work/education company or course provider */
+  /* Work/education dates of employment or study */
+}
+#about-main .about-section .item .item-title {
+  margin: 0 0 10px;
+}
+#about-main .about-section .item .item-place {
+  margin: 0px;
+  color: #303540;
+  font-weight: 500;
+}
+#about-main .about-section .item .item-dates {
+  margin: 0 0 15px;
+  font-style: italic;
+  font-size: 0.9em;
 }/*# sourceMappingURL=about.css.map */

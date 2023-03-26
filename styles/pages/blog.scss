@@ -1,7 +1,7 @@
 @import "../index";
 
 #blog-main {
-    // Styling for list of blogs
+    /* Styling for list of blogs */
     #bloglist {
         margin-bottom: 30px;
         border: 1px solid $mainpurple;
@@ -28,20 +28,20 @@
             }
         }
     }
-    // Styling for each set of individual blogposts
+    /* Styling for each set of individual blogposts */
     .blogpost {
         margin: 0 auto 30px;
         border-bottom: 1px dashed $mainpurple;
         box-sizing: border-box;
         max-width: 80vw;
-        // Title of each blog
+        /* Title of each blog */
         .blogpost-title {
         }
         .blogpost-info {
             margin-bottom: 10px;
             font-size: 0.8em;
         }
-        // Image for each blog
+        /* Image for each blog */
         .blogpost-image {
             margin-bottom: 15px;
             img {
@@ -53,11 +53,11 @@
                 object-fit: cover;
             }
         }
-        // Body text of blog
+        /* Body text of blog */
         .blogpost-text {
             margin-bottom: 20px;
         }
-        // Anchor - back to top
+        /* Anchor - back to top */
         .blogpost-footer {
             margin-bottom:50px;
             text-align: right;
@@ -69,7 +69,7 @@
     }
 }
 
-// Fix sticky header hiding anchor
+/* Fix sticky header hiding anchor */
 :target::before {
     height: 70px;
     margin: -70px 0 0;
@@ -78,7 +78,7 @@
 }
 
 @media screen and (min-width:$large) {
-    // Fix sticky header hiding anchor
+    /* Fix sticky header hiding anchor */
     :target::before {
         height: 120px;
         margin: -120px 0 0;

@@ -2,11 +2,23 @@
 
 #about-main {
     .about-section {
+        margin-bottom: 50px;
+        /* Title of each section */
         .about-title {
             font-weight: 700;
             border-bottom: 1px solid $navblue;
         }
-
+        /* Download resume - capsule styling */
+        #resume-text {
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: $mainblue;
+        }
+        #resume-text:hover {
+            background-color: $maindarkblue;
+            color: white;
+        }
+        /* List of software and apps - capsule styling */
         #softwareapps-list {
             display: flex;
             flex-wrap: wrap;
@@ -15,8 +27,8 @@
             p {
                 margin: 5px 5px;
                 padding: 5px 10px;
-                border: 1px solid $mainblue;
                 border-radius: 10px;
+                border: 1px solid $mainblue;
                 line-height: 0.8em;
                 font-size: 0.9em;
                 font-weight: 700;
@@ -26,6 +38,24 @@
             p:hover {
                 background-color: $mainblue;
                 cursor: crosshair;
+            }
+        }
+        .item {
+            /* Work/education role title or course title */
+            .item-title {
+                margin: 0 0 10px;
+            }
+            /* Work/education company or course provider */
+            .item-place {
+                margin: 0px;
+                color: $maindarkblue;
+                font-weight: 500;
+            }
+            /* Work/education dates of employment or study */
+            .item-dates {
+                margin: 0 0 15px;
+                font-style: italic;
+                font-size: 0.9em;
             }
         }
     }

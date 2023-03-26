@@ -3,18 +3,18 @@
 #page-header {
     background-color: $mainwhite;
     border-bottom: 1px solid $navblue;
-    // size
+    /* size */
     width: 100%;
     height: 70px;
     box-sizing: border-box;
-    //position
+    /* position */
     position: sticky;
     top:0;
-    // child items positioning
+    /* child items positioning */
     display: flex;
     justify-content: center;
     align-items: center;
-
+    /* heading/title */
     h1 {
         margin: 0;
         font-family: 'Playfair Display', serif;

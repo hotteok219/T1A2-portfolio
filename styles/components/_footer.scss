@@ -3,23 +3,23 @@
 
 #page-footer {
     background-color: $maindarkblue;
-    // size
+    /* size */
     width: 100%; // Use 100% instead of 100vw to fix horizontal scroll bar issue when the page has a vertical scroll
     box-sizing: border-box;
-    // design
+    /* design */
     padding: 10px;
-    // child items positioning
+    /* child items positioning */
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    /* profile photo */
     #contact-photo {
         img {
             max-width: 25vw;
             border-radius: 50%;
         }
     }
-
+    /* contact details container div */
     #contact-details {
         display: flex;
         flex-direction: column;
@@ -43,7 +43,7 @@
             display: flex;
             justify-content: center;
             width: 100%;
-
+            /* icons */
             .contact-links-icon {
                 margin:0px 20px;
                 font-size: 1.5em;
@@ -57,6 +57,7 @@
 
 @media screen and (min-width: $medium) {
     #page-footer {
+        /* change flex direction on tablet and desktop viewports */
         flex-direction: row;
         justify-content: center;
 

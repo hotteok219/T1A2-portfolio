@@ -2,30 +2,32 @@
 @import "./components/nav";
 @import "./components/footer";
 
-// Page structure setup
 body {
+    /* initial page structure setup */
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // Design
+    /* general design */
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     background-image: radial-gradient(farthest-side at 80% 65%, $mainblue, $mainwhite);
     color: $maindarkblue;
-
+    /* backup styling for hyperlinks */
     a {
         text-decoration: none;
         color: $maindarkblue;
     }
 }
 
+
 main {
+    margin-bottom: 20px;
+    padding: 10px;
+    /* restrict main container for extra large monitors */
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
     flex-grow: 2;
-    padding: 10px;
-    margin-bottom: 20px;
 }
