@@ -1,4 +1,4 @@
-This repository represents an assignment submitted for [Coder Academy](https://coderacademy.edu.au/)'s full stack web Development coding bootcamp.
+This repository was submitted as an assignment for [Coder Academy](https://coderacademy.edu.au/)'s full stack web development coding bootcamp.
 
 # T1A2 - Portfolio
 
